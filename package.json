@@ -6,7 +6,14 @@
   "bin": {
     "hlsdl": "bin/cli.js"
   },
-  "repository": "git@github.com:nmrony/hlsdownloader-cli.git",
-  "author": "Nur Rony <pro.nmrony@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmrony/hlsdownloader-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nmrony/hlsdownloader-cli/issues",
+    "email": "pro.nmrony@gmail.com"
+  },
+  "author": "Nur Rony <pro.nmrony@gmail.com>(http://nmrony.info)",
   "license": "MIT"
 }
