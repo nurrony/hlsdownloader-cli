@@ -1,11 +1,9 @@
-HLSDownloader
-==============
-[![version][npm-version]][npm-url] [![coding style: standard][standard-svg]][standard-site]  
-[![dependencies][npm-dependencies]][dep-status] 
-[![devDependencies][npm-dev-dependencies]][devdep-status] 
-[![Downloads][npm-total-downloads]][npm-url] 
-[![Travis branch](https://img.shields.io/travis/nmrony/hlsdownloader-cli/master.svg?style=flat-square)](https://travis-ci.org/nmrony/hlsdownloader-cli)
+HLSDownloader CLI (hlsdl)
+=========================
+[![version][npm-version]][npm-url] [![coding style: standard][standard-svg]][standard-site]  [![dependencies][npm-dependencies]][dep-status] [![devDependencies][npm-dev-dependencies]][devdep-status] [![Downloads][npm-total-downloads]][npm-url] [![Travis branch](https://img.shields.io/travis/nmrony/hlsdownloader-cli/master.svg?style=flat-square)](https://travis-ci.org/nmrony/hlsdownloader-cli)
 
+
+The project is actively under development and provides no functionality yet. Please **DO NOT** Install it now
 
 
 
