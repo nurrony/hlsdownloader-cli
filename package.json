@@ -1,0 +1,12 @@
+{
+  "name": "hlsdl",
+  "version": "1.0.0-alpha.01",
+  "description": "Downloads HLS Playlist file and TS chunks with Terminal",
+  "preferGlobal": true,
+  "bin": {
+    "hlsdl": "bin/cli.js"
+  },
+  "repository": "git@github.com:nmrony/hlsdownloader-cli.git",
+  "author": "Nur Rony <pro.nmrony@gmail.com>",
+  "license": "MIT"
+}
