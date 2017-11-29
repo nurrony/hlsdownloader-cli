@@ -6,7 +6,28 @@
   "bin": {
     "hlsdl": "bin/cli.js"
   },
-  "repository": "git@github.com:nmrony/hlsdownloader-cli.git",
-  "author": "Nur Rony <pro.nmrony@gmail.com>",
-  "license": "MIT"
+  "scripts": {
+    "compile": "babel index.js -o bin/cli.js --minified --no-comments"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmrony/hlsdownloader-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nmrony/hlsdownloader-cli/issues",
+    "email": "pro.nmrony@gmail.com"
+  },
+  "author": "Nur Rony <pro.nmrony@gmail.com>(http://nmrony.info)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.32",
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "eslint": "^4.12.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }
