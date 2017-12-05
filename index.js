@@ -30,7 +30,7 @@ function help() {
   }
 
   if (argv.v) {
-    return console.log(version)
+    return console.log('hlsdownloader cli version: ', version)
   }
   // start download
 
