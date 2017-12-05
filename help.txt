@@ -1,0 +1,11 @@
+Usage: hlsdl <url> [options]
+
+Options:
+  -d, --download-dir     path to directory (default: current directory)
+  -h, --help             Show help
+  -v, --version          Show version number  [boolean]
+
+Examples:
+  hlsdl http://path/to/playlist.m3u8 --download-dir /path/to/download
+  hlsdl http://path/to/playlist.m3u8 -d /path/to/download
+
