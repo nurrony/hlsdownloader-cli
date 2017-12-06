@@ -4,7 +4,7 @@ import { createReadStream } from 'fs'
 import { version } from './../package.json'
 
 const options = {
-  string:['download-dir'],
+  string: ['download-dir'],
   boolean: ['version', 'help'],
   alias: {
     d: 'download-directory',
@@ -20,7 +20,7 @@ const options = {
 
 const argv = minimist(process.argv.slice(2), options)
 
-function help() {
+function help () {
   return createReadStream('./help.txt').pipe(process.stdout)
 }
 
@@ -33,5 +33,4 @@ function help() {
     return console.log('hlsdownloader cli version: ', version)
   }
   // start download
-
 })(argv, undefined)

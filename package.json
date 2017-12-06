@@ -7,7 +7,9 @@
     "hlsdl": "bin/cli.js"
   },
   "scripts": {
-    "compile": "babel index.js -o bin/cli.js --minified --no-comments"
+    "compile": "babel index.js -o bin/cli.js --minified --no-comments",
+    "lint": "eslint . && echo 'No linting error found'",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,6 @@
     "eslint-plugin-standard": "^3.0.1"
   },
   "dependencies": {
-    "minimist": "^1.2.0",
-    "minimist-options": "^3.0.2"
+    "minimist": "^1.2.0"
   }
 }
