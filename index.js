@@ -20,9 +20,9 @@ function prepareExtraParams(requestParams) {
   return requestObject
 }
 const commandHandlers = {
-  download(downloaderParams) {
-    //HLSDownloader.download({ playlistURL, destination })
-    console.log('testing', downloaderParams)
+  download(params) {
+    const downloader = new HLSDownloader({ ...params })
+    downloader.startDownload((err, msg) => err ? console.log(err) : console.log(msg))
   },
   help() {
     createReadStream('./help.txt').pipe(process.stdout)
