@@ -4,13 +4,16 @@
   "description": "Downloads HLS Playlist file and TS chunks with Terminal",
   "preferGlobal": true,
   "bin": {
-    "hlsdl": "bin/cli.js"
+    "hlsdl": "bin/hlsdl"
   },
   "scripts": {
-    "compile": "babel index.js -o bin/cli.js --minified --no-comments",
+    "build": "npm run clean && npm run copy && npm run compile",
+    "clean": "rm -rf bin && mkdir bin",
+    "compile": "babel index.js -o bin/hlsdl --minified --no-comments",
+    "copy": "cp ./package.json bin",
     "lint": "eslint . tests/*.spec.js && echo 'No linting error found'",
     "lint:fix": "eslint . --fix",
-    "test": "mocha --require @babel/register tests/*.spec.js"
+    "test": "mocha --require babel-register tests/*.spec.js"
   },
   "repository": {
     "type": "git",

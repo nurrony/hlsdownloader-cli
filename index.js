@@ -3,9 +3,10 @@ import minimist from 'minimist'
 import HLSDownloader from 'hlsdownloader'
 
 import { createReadStream } from 'fs'
-import { version } from './../package.json'
+import { version } from './package.json'
 
-function prepareExtraParams(requestParams) {
+export function prepareExtraParams(requestParams) {
+  console.log(requestParams)
   const requestObject = {}
   Object.keys(requestParams).map(paramName => {
     try {
@@ -34,12 +35,12 @@ const commandHandlers = {
   }
 }
 
-function commandFlagPassed({ help, version }) {
+export function commandFlagPassed({ help, version }) {
   const command = (help && 'help') || (version && 'version')
   return command && commandHandlers[command]()
 }
 
-function availableCommandPassed(playlistURL) {
+export function availableCommandPassed(playlistURL) {
   const commandList = Object.keys(commandHandlers)
   return (playlistURL && commandList.indexOf(playlistURL) !== -1 && commandHandlers[playlistURL]())
 }
@@ -61,7 +62,7 @@ const options = {
 
 const argv = minimist(process.argv.slice(2), options)
 
-function execute({ destination, d, version, v, help, h, _, ...restArgs }) {
+export function execute({ destination, d, version, v, help, h, _, ...restArgs }) {
   const playlistURL = _.pop()
   const commandExecuted = commandFlagPassed({ help, version }) || availableCommandPassed(playlistURL)
 
