@@ -14,6 +14,7 @@ Installation
 
 Usage
 -----
+```js
 Usage: hlsdl <url> [options]
 
 Options:
@@ -34,6 +35,7 @@ Options:
 Examples:
   hlsdl http://path/to/playlist.m3u8 --destination /path/to/download
   hlsdl http://path/to/playlist.m3u8 -d /path/to/download
+```
 
 Passing **request-promise** parameters
 ---------------------------------------
