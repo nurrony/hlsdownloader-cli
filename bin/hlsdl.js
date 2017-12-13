@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+'use strict';var _minimist=require('minimist');var _minimist2=_interopRequireDefault(_minimist);var _lib=require('./lib');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj}}const options={string:['destination'],boolean:['version','help'],alias:{d:'destination',h:'help',v:'version'},default:{destination:'./',help:false,version:false}};const argv=(0,_minimist2.default)(process.argv.slice(2),options);(0,_lib.execute)(argv);
