@@ -1,6 +1,6 @@
 {
   "name": "hlsdownloader-cli",
-  "version": "1.0.0-alpha.01",
+  "version": "1.0.0",
   "description": "Downloads HLS Playlist file and TS chunks with Terminal",
   "preferGlobal": true,
   "bin": {
