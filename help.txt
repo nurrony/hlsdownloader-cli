@@ -1,4 +1,4 @@
-Usage: hlsdl <url> [options]
+Usage: hlsdl <url> [options] [request-option-supported-by-hlsdownloader]
 
 Options:
   -d, --destination      path to directory (default: current directory)
@@ -8,3 +8,4 @@ Options:
 Examples:
   hlsdl http://path/to/playlist.m3u8 --destination /path/to/download
   hlsdl http://path/to/playlist.m3u8 -d /path/to/download
+  hlsdl http://path/to/playlist.m3u8 -d /path/to/download --headers '{"X-Powered-By": "Yay!!"}'
