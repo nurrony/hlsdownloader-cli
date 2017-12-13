@@ -2,7 +2,6 @@ HLSDownloader CLI (hlsdl)
 =========================
 [![version][npm-version]][npm-url] [![coding style: standard][standard-svg]][standard-site]  [![dependencies][npm-dependencies]][dep-status] [![devDependencies][npm-dev-dependencies]][devdep-status] [![Downloads][npm-total-downloads]][npm-url] [![Travis branch](https://img.shields.io/travis/nmrony/hlsdownloader-cli/master.svg?style=flat-square)](https://travis-ci.org/nmrony/hlsdownloader-cli)
 
->For full features list, please check [Todo List](#todo-list) below. Keep an eye on github for updated feature list
 
 Installation
 -------------
@@ -25,22 +24,14 @@ Options:
 Examples:
   hlsdl http://path/to/playlist.m3u8 --destination /path/to/download
   hlsdl http://path/to/playlist.m3u8 -d /path/to/download
-Usage: hlsdl <url> [options]
-
-Options:
-  -d, --destination      path to directory (default: current directory)
-  -h, --help             Show help
-  -v, --version          Show version number [boolean]
-
-Examples:
-  hlsdl http://path/to/playlist.m3u8 --destination /path/to/download
-  hlsdl http://path/to/playlist.m3u8 -d /path/to/download
+  hlsdl http://path/to/playlist.m3u8 -d /path/to/download --headers '{"X-Powered-By": "Yay!!"}'
 ```
 
 Passing **request-promise** parameters
 ---------------------------------------
 
-> Add more documentation
+You can pass any [request-promise](https://github.com/request/request-promise) parameter as flag that are supported by
+[HLSDownloader](https://github.com/nmrony/hlsdownloader) package
 
 I will be grateful if you all help me to improve this package by giving your suggestions, feature request and
 pull requests. I am all ears!!
