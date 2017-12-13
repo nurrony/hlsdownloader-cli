@@ -13,6 +13,7 @@
     "compile": "babel src -d ./bin --minified --no-comments",
     "lint": "eslint . tests/*.spec.js && echo 'No linting error found'",
     "lint:fix": "eslint . --fix",
+    "prepublish": "npm run build",
     "test": "mocha --require babel-register"
   },
   "repository": {
