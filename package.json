@@ -44,6 +44,6 @@
   "dependencies": {
     "hlsdownloader": "^2.1.0",
     "minimist": "^1.2.0",
-    "request": "^2.83.0"
+    "request": "^2.84.0"
   }
 }
