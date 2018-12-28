@@ -10,11 +10,11 @@
     "build": "npm run clean && npm run compile && npm run chmod",
     "chmod": "chmod +x bin/hlsdl.js",
     "clean": "rm -fr bin",
-    "compile": "babel src -d ./bin --no-comments",
+    "compile": "babel src -d ./bin --no-comments --minified",
     "lint": "eslint . tests/*.spec.js && echo 'No linting error found'",
     "lint:fix": "eslint . --fix",
-    "prepublish": "npm run build",
-    "test": "mocha --require babel-register"
+    "prepublishOnly": "npm run build",
+    "test": "mocha --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -24,26 +24,28 @@
     "url": "https://github.com/nmrony/hlsdownloader-cli/issues",
     "email": "pro.nmrony@gmail.com"
   },
-  "author": "Nur Rony <pro.nmrony@gmail.com>(http://nmrony.info)",
+  "author": "Nur Rony <pro.nmrony@gmail.com>(https://nmrony.info)",
+  "homepage": "https://nmrony.github.io/hlsdownloader-cli/",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.0.3",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "chai": "^4.1.2",
-    "eslint": "^4.12.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^5.0.1"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.11.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0"
   },
   "dependencies": {
-    "hlsdownloader": "^2.1.0",
+    "hlsdownloader": "^2.2.1",
     "minimist": "^1.2.0",
-    "request": "^2.84.0"
+    "request": "^2.88.0"
   }
 }
