@@ -10,7 +10,7 @@
     "build": "npm run clean && npm run compile && npm run chmod",
     "chmod": "chmod +x bin/hlsdl.js",
     "clean": "rm -fr bin",
-    "compile": "babel src -d ./bin --minified --no-comments",
+    "compile": "babel src -d ./bin --no-comments",
     "lint": "eslint . tests/*.spec.js && echo 'No linting error found'",
     "lint:fix": "eslint . --fix",
     "prepublish": "npm run build",
