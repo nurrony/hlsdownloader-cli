@@ -13,8 +13,15 @@ coverage
 .jscsrc
 .jshintrc
 .eslintrc*
+.eslint*
+.babelrc.js
+*.log
 
 #editor settings
 .idea
 .editorconfig
 .vscode
+
+# non-dist-files
+src
+test
