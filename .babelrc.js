@@ -8,7 +8,7 @@ module.exports = {
           node: '6.10'
         },
         useBuiltIns: 'usage',
-        debug: true
+        debug: false
       }
     ]
   ],

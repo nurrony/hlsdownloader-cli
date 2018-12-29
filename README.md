@@ -1,20 +1,21 @@
-HLSDownloader CLI (hlsdl)
-=========================
+# HLSDownloader CLI (hlsdl)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/nmrony/hlsdownloader-cli.svg)](https://greenkeeper.io/)
-[![version][npm-version]][npm-url] [![coding style: standard][standard-svg]][standard-site]  [![dependencies][npm-dependencies]][dep-status] [![devDependencies][npm-dev-dependencies]][devdep-status] [![Downloads][npm-total-downloads]][npm-url] [![Travis branch](https://img.shields.io/travis/nmrony/hlsdownloader-cli/master.svg?style=flat-square)](https://travis-ci.org/nmrony/hlsdownloader-cli)
+[![version][npm-version]][npm-url] [![coding style: standard][standard-svg]][standard-site] [![dependencies][npm-dependencies]][dep-status] [![devDependencies][npm-dev-dependencies]][devdep-status] [![Downloads][npm-total-downloads]][npm-url] [![Travis branch](https://img.shields.io/travis/nmrony/hlsdownloader-cli/master.svg?style=flat-square)](https://travis-ci.org/nmrony/hlsdownloader-cli)
+[![semantic-release][semvarbadge]][npm-url]
 
+> HLS Downloader is under active development. Please send your thoughts, feature request and pull request
 
-Installation
--------------
+## Installation
+
 ```sh
 [sudo] npm install -g hlsdownloader-cli
 # or
 [sudo] yarn global add hlsdownloader-cli
 ```
 
-Usage
------
+## Usage
+
 ```js
 Usage: hlsdl <url> [options]
 
@@ -29,8 +30,7 @@ Examples:
   hlsdl http://path/to/playlist.m3u8 -d /path/to/download --headers '{"X-Powered-By": "Yay!!"}'
 ```
 
-Passing **request-promise** parameters
----------------------------------------
+## Passing **request-promise** parameters
 
 You can pass any [request-promise](https://github.com/request/request-promise) parameter as flag that are supported by
 [HLSDownloader](https://github.com/nmrony/hlsdownloader) package
@@ -48,3 +48,4 @@ pull requests. I am all ears!!
 [devdep-status]: https://david-dm.org/nmrony/hlsdownloader-cli#info=devDependencies&view=table
 [standard-svg]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [standard-site]: http://standardjs.com
+[semvarbadge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg

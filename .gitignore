@@ -147,3 +147,5 @@ crashlytics.properties
 crashlytics-build.properties
 dist/
 bin/
+coverage
+.nyc_output
