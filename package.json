@@ -15,7 +15,7 @@
     "coverage": "NODE_ENV=test nyc -x .babelrc.js -x test --reporter=lcov --reporter=text npm test",
     "lint": "eslint '**/*.spec.js' && echo 'No linting error found'",
     "lint:fix": "eslint . --fix",
-    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "mocha --require @babel/register --recursive",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
