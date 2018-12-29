@@ -1,8 +1,9 @@
 .nvmrc
-
+.github
 #tests
 test
 coverage
+.nyc-output
 
 #build tools
 .travis.yml
