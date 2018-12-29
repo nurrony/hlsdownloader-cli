@@ -1,6 +1,6 @@
 {
   "name": "hlsdownloader-cli",
-  "version": "1.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "Downloads HLS Playlist file and TS chunks with Terminal",
   "preferGlobal": true,
   "bin": {
@@ -17,7 +17,9 @@
     "lint": "eslint '**/*.spec.js' && echo 'No linting error found'",
     "lint:fix": "eslint . --fix",
     "prepublishOnly": "npm run build",
-    "test": "mocha --require @babel/register --recursive"
+    "test": "mocha --require @babel/register --recursive",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "config": {
     "commitizen": {
@@ -31,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nmrony/hlsdownloader-cli.git"
+    "url": "https://github.com/nmrony/hlsdownloader-cli.git"
   },
   "bugs": {
     "url": "https://github.com/nmrony/hlsdownloader-cli/issues",
@@ -60,7 +62,8 @@
     "husky": "^1.3.1",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
-    "travis-deploy-once": "5.0.11"
+    "travis-deploy-once": "5.0.11",
+    "semantic-release": "^15.13.2"
   },
   "dependencies": {
     "hlsdownloader": "^2.2.1",
