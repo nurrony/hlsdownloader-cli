@@ -5,7 +5,9 @@ notifications:
 node_js:
   - '8'
 before_install: npm install --global greenkeeper-lockfile@1
-before_script: npm run build && greenkeeper-lockfile-update
+before_script:
+  - greenkeeper-lockfile-update
+  - npm run build
 after_script:
   - git diff --color | cat
   - greenkeeper-lockfile-upload
