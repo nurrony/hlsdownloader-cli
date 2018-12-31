@@ -3,7 +3,8 @@
 #tests
 test
 coverage
-.nyc-output
+.nyc_output
+.nyc-output/**
 
 #build tools
 .travis.yml
@@ -26,3 +27,4 @@ coverage
 # non-dist-files
 src
 test
+./help.txt

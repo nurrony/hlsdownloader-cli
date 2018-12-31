@@ -7,8 +7,9 @@
     "hlsdl": "bin/hlsdl.js"
   },
   "scripts": {
-    "build": "npm run clean && npm run compile",
+    "build": "npm run clean && npm run compile && npm run copy",
     "clean": "rm -fr bin",
+    "copy": "cp -f ./help.txt bin/",
     "code:quality": "npm run lint && npm run lint:fix && npm run build && npm run test",
     "commit": "git-cz",
     "compile": "babel src -d ./bin --no-comments --minified",
