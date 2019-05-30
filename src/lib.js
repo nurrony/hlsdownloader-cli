@@ -1,5 +1,6 @@
 import { createReadStream } from 'fs';
 import HLSDownloader from 'hlsdownloader';
+import Ora from 'ora';
 import { version } from './../package.json';
 
 export function prepareExtraParams(requestParams) {
@@ -17,10 +18,29 @@ export function prepareExtraParams(requestParams) {
   return requestObject;
 }
 
+const _downloadHls = params =>
+  new Promise((resolve, reject) =>
+    new HLSDownloader({ ...params }).startDownload((err, msg) => (err ? reject(err) : resolve(msg)))
+  );
+
 const commandHandlers = {
-  download(params) {
-    const downloader = new HLSDownloader({ ...params });
-    downloader.startDownload((err, msg) => (err ? console.log(err) : console.log(msg)));
+  async download(params) {
+    const spinner = new Ora({ text: 'Downloading available TS and Playlist files...' });
+    try {
+      spinner.start();
+      let { message, errors = null } = await _downloadHls(params);
+      spinner.text = message;
+      if (errors) {
+        spinner.warn();
+        console.log('Details:\r\n Following URLs can not be downloaded');
+        console.log(`${errors.join('\r\n')}`);
+      } else {
+        spinner.succeed();
+      }
+    } catch (error) {
+      spinner.text = `Downloading failed.\r\nDetails: ${error.statusCode} - ${error.message}. \r\n`;
+      spinner.fail();
+    }
   },
   help() {
     createReadStream('./help.txt').pipe(process.stdout);
