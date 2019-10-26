@@ -5,8 +5,9 @@ module.exports = {
       '@babel/env',
       {
         targets: {
-          node: '6.10'
+          node: '10.16.3'
         },
+        "corejs": "3",
         useBuiltIns: 'usage',
         debug: false
       }
