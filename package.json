@@ -19,7 +19,9 @@
     "prepublishOnly": "npm run build",
     "test": "mocha --require @babel/register --recursive",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "config": {
     "commitizen": {
@@ -68,6 +70,8 @@
   "dependencies": {
     "hlsdownloader": "^2.2.1",
     "minimist": "^1.2.0",
-    "ora": "^3.4.0"
-  }
+    "ora": "^3.4.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
