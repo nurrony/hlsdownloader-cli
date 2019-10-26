@@ -69,7 +69,7 @@
   },
   "dependencies": {
     "core-js": "^3.3.4",
-    "hlsdownloader": "^2.2.1",
+    "hlsdownloader": "^2.2.2",
     "minimist": "^1.2.0",
     "ora": "^4.0.2",
     "snyk": "^1.189.0"
