@@ -71,7 +71,7 @@
     "hlsdownloader": "^2.2.1",
     "minimist": "^1.2.0",
     "ora": "^3.4.0",
-    "snyk": "^1.189.0"
+    "snyk": "^1.239.0"
   },
   "snyk": true
 }
