@@ -68,7 +68,7 @@
     "semantic-release": "^15.13.28"
   },
   "dependencies": {
-    "core-js": "^3.3.4",
+    "core-js": "3.4.6",
     "hlsdownloader": "^2.2.1",
     "minimist": "^1.2.0",
     "ora": "^4.0.2",
