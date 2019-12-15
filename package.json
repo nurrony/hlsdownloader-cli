@@ -45,34 +45,34 @@
   "homepage": "https://nmrony.github.io/hlsdownloader-cli/",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/register": "^7.6.2",
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/register": "^7.7.4",
     "babel-eslint": "^10.0.3",
     "chai": "^4.2.0",
     "commitizen": "4.0.3",
     "cz-conventional-changelog": "3.0.2",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.0.9",
+    "husky": "^3.1.0",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "travis-deploy-once": "5.0.11",
-    "semantic-release": "^15.13.28"
+    "semantic-release": "^15.13.31",
+    "snyk": "^1.260.0"
   },
   "dependencies": {
-    "core-js": "^3.3.4",
-    "hlsdownloader": "^2.2.1",
+    "core-js": "^3.5.0",
+    "hlsdownloader": "^2.2.3",
     "minimist": "^1.2.0",
-    "ora": "^4.0.2",
-    "snyk": "^1.189.0"
+    "ora": "^4.0.3"
   },
   "snyk": true
 }
