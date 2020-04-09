@@ -69,7 +69,7 @@
     "snyk": "^1.260.0"
   },
   "dependencies": {
-    "core-js": "^3.5.0",
+    "core-js": "^3.6.5",
     "hlsdownloader": "^2.2.3",
     "minimist": "^1.2.0",
     "ora": "^4.0.3"
