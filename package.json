@@ -72,7 +72,7 @@
     "core-js": "^3.5.0",
     "hlsdownloader": "^2.2.3",
     "minimist": "^1.2.0",
-    "ora": "^4.0.3"
+    "ora": "^4.0.4"
   },
   "snyk": true
 }
