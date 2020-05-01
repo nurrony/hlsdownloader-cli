@@ -65,14 +65,14 @@
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "travis-deploy-once": "5.0.11",
-    "semantic-release": "^15.13.31",
-    "snyk": "^1.260.0"
+    "semantic-release": "^15.13.31"
   },
   "dependencies": {
     "core-js": "^3.5.0",
     "hlsdownloader": "^2.2.3",
     "minimist": "^1.2.0",
-    "ora": "^4.0.3"
+    "ora": "^4.0.3",
+    "snyk": "^1.316.1"
   },
   "snyk": true
 }
