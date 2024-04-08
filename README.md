@@ -1,5 +1,7 @@
 # HLSDownloader CLI (hlsdl)
 
+> Upgrading is in progress. Please use tag or npm to install stable version
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/nmrony/hlsdownloader-cli.svg)](https://greenkeeper.io/)
 [![version][npm-version]][npm-url] [![coding style: standard][standard-svg]][standard-site] [![dependencies][npm-dependencies]][dep-status] [![devDependencies][npm-dev-dependencies]][devdep-status] [![Downloads][npm-total-downloads]][npm-url] [![Travis branch](https://img.shields.io/travis/nmrony/hlsdownloader-cli/master.svg?style=flat-square)](https://travis-ci.org/nmrony/hlsdownloader-cli)
 [![semantic-release][semvarbadge]][npm-url]
