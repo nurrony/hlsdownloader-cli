@@ -1,8 +1,10 @@
 {
-  "extends": "prettier",
-  "parser": "babel-eslint",
   "env": {
     "node": true,
-    "mocha": true
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2023,
+    "sourceType": "module"
   }
 }
